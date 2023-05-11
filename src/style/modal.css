@@ -1,0 +1,26 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 100%;
+  z-index: 5;
+  height: fit-content;
+  animation-name: translate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes translate {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
